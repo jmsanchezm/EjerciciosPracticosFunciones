@@ -11,11 +11,12 @@ public class Main {
 		Scanner read= new Scanner (System.in);
 		System.out.println("Introduzca un número: ");
 		num=read.nextInt();
-		Numeros operaciones = new Numeros();
-		resultPrimo= operaciones.esPrimo(num)?"Es primo": "No es primo";
+		Numeros cálculo = new Numeros();
+		resultPrimo= cálculo.esPrimo(num)?"Es primo": "No es primo";
 		System.out.println(resultPrimo);
-		resultCapicua=operaciones.esCapicua(num)?"Es capicúa": "No es capicúa";
+		resultCapicua=cálculo.esCapicua(num)?"Es capicúa": "No es capicúa";
 		System.out.println(resultCapicua);
+		read.close();
 		
 		
 		
